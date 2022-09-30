@@ -4,7 +4,7 @@ const OnTheWeb = () => {
   return (
     <>
       <Section title="On the web"></Section>
-      <div className="mt-4 ml-2">
+      <div className="mt-4 ml-2 text-base">
         <div className="mt-2">
           <a
             href="https://github.com/kult0922"

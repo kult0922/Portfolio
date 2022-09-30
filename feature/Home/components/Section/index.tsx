@@ -5,9 +5,8 @@ type Props = {
 const Section: React.FC<Props> = ({ title }) => {
   return (
     <>
-      <div className="text-2xl underline decoration-green-400 decoration-4">
-        {title}
-      </div>
+      <div className="text-2xl text-white decoration-4">{title}</div>
+      <div className="w-[100%] border-b border-white"></div>
     </>
   )
 }

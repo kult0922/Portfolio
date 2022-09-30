@@ -1,11 +1,12 @@
 import Section from '../Section'
+import Code from './Code'
 
 const Works = () => {
   return (
     <>
       <Section title="Works"></Section>
-      <div className="flex justify-center">
-        <div>
+      <div className="mt-10 flex flex-wrap justify-center">
+        <div className="m-2">
           <a
             href="https://www.minecraft-dot.pictures/"
             target="_blank"
@@ -13,15 +14,19 @@ const Works = () => {
           >
             <div className="flex flex-col items-center">
               <img
-                className="w-[400px] rounded-lg"
+                className="border-base h-[240px] w-[400px] rounded-lg border-l-8"
                 src="/image/minecraft_dot.png"
               ></img>
 
-              <div className="text-xl">Minecraft Dot</div>
-              <div>写真をマインクラフトのドット絵に変換し編集できるアプリ</div>
+              <div className="text-xl text-base">Minecraft Dot</div>
+              <div className="">
+                写真をマインクラフトのドット絵に変換・編集できるアプリ
+              </div>
             </div>
           </a>
-
+          <Code url="https://github.com/kult0922/minecraftDot"></Code>
+        </div>
+        <div className="m-2">
           <a
             href="https://kurisaki-en.com/"
             target="_blank"
@@ -29,13 +34,14 @@ const Works = () => {
           >
             <div className="flex flex-col items-center">
               <img
-                className="w-[400px] rounded-lg"
+                className="border-base h-[240px] w-[400px] rounded-lg border-l-8"
                 src="/image/kurisakien.png"
               ></img>
-              <div className="text-xl">栗崎園 ECサイト</div>
+              <div className="text-xl text-base">栗崎園 ECサイト</div>
               <div>お茶農家 「栗崎園」のECサイト</div>
             </div>
           </a>
+          <Code url="https://github.com/kult0922/kurisakien"></Code>
         </div>
       </div>
     </>
