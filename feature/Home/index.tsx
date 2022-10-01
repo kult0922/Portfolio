@@ -22,9 +22,9 @@ const Home = () => {
       <div id="top-content-container" className="h-[50px]">
         <TopContent></TopContent>
       </div>
-      <div className="mt-5 flex justify-center">
+      <div className="mt-5 mb-10 flex justify-center">
         <div className="w-[90%] sm:w-[60%] lg:w-[50%]">
-          <div className="h-[500px]">
+          <div className="h-[320px]">
             <Name></Name>
           </div>
           <OnTheWeb></OnTheWeb>

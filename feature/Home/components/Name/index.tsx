@@ -3,17 +3,15 @@ const Name = () => {
   return (
     <>
       <div className="relative">
-        <div className="bg-base absolute top-[70px] -z-20 ml-[calc(50%_-_55vw)] h-[360px] w-[380px] rounded-lg sm:ml-[0] sm:w-[400px]"></div>
-        <div className="xs:w-[400px] absolute top-[100px] -z-10 ml-[calc(50%_-_55vw)] h-[300px] w-[430px] rounded-r-lg bg-white sm:ml-0 sm:w-[480px]">
+        <div className="absolute top-[70px] -z-20 ml-[calc(50%_-_55vw)] h-[200px] w-[80vw] rounded-lg bg-base sm:ml-[0] xx:w-[350px]"></div>
+        <div className="xs:w-[380px] absolute top-[100px] -z-10 ml-[calc(50%_-_55vw)] h-[140px] w-[90vw] rounded-r-lg bg-white sm:ml-0 xx:w-[400px]">
           <div className="pl-12 text-base">
             <div className="mt-6 text-3xl font-bold lg:text-4xl">
               Kazuma Kurisaki
             </div>
             <div>Web developper</div>
-            <div className="text-back xs:w-[320px] w-[230px] sm:w-[400px]">
-              吾輩わがはいは猫である。名前はまだ無い。
-              どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
-              吾輩はここで始めて人間というものを見た。
+            <div className="xs:w-[320px] w-[230px] text-back sm:w-[400px]">
+              趣味で個人開発をしているWebエンジニア
             </div>
           </div>
         </div>

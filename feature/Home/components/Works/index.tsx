@@ -1,48 +1,25 @@
 import Section from '../Section'
-import Code from './Code'
+import Work from './Work'
 
 const Works = () => {
   return (
     <>
       <Section title="Works"></Section>
-      <div className="mt-10 flex flex-wrap justify-center">
-        <div className="m-2">
-          <a
-            href="https://www.minecraft-dot.pictures/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="flex flex-col items-center">
-              <img
-                className="border-base h-[240px] w-[400px] rounded-lg border-l-8"
-                src="/image/minecraft_dot.png"
-              ></img>
-
-              <div className="text-xl text-base">Minecraft Dot</div>
-              <div className="">
-                写真をマインクラフトのドット絵に変換・編集できるアプリ
-              </div>
-            </div>
-          </a>
-          <Code url="https://github.com/kult0922/minecraftDot"></Code>
-        </div>
-        <div className="m-2">
-          <a
-            href="https://kurisaki-en.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="flex flex-col items-center">
-              <img
-                className="border-base h-[240px] w-[400px] rounded-lg border-l-8"
-                src="/image/kurisakien.png"
-              ></img>
-              <div className="text-xl text-base">栗崎園 ECサイト</div>
-              <div>お茶農家 「栗崎園」のECサイト</div>
-            </div>
-          </a>
-          <Code url="https://github.com/kult0922/kurisakien"></Code>
-        </div>
+      <div className="mt-4 flex flex-wrap justify-center">
+        <Work
+          imagePath="/image/minecraft_dot.png"
+          webUrl="https://www.minecraft-dot.pictures"
+          codeUrl="https://github.com/kult0922/kurisakien"
+          title="Minecraft Dot"
+          description="写真をマインクラフトのドット絵に変換・編集できるアプリ"
+        />
+        <Work
+          imagePath="/image/kurisakien.png"
+          webUrl="https://kurisaki-en.com/"
+          codeUrl="https://github.com/kult0922/minecraftDot"
+          title="「栗崎園」ECサイト"
+          description="お茶農家「栗崎園」ECサイト"
+        />
       </div>
     </>
   )
