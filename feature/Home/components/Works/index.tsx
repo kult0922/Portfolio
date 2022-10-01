@@ -5,7 +5,7 @@ const Works = () => {
   return (
     <>
       <Section title="Works"></Section>
-      <div className="mt-10 flex flex-wrap justify-center">
+      <div className="mt-4 flex flex-wrap justify-center">
         <div className="m-2">
           <a
             href="https://www.minecraft-dot.pictures/"
@@ -14,7 +14,7 @@ const Works = () => {
           >
             <div className="flex flex-col items-center">
               <img
-                className="border-base h-[240px] w-[400px] rounded-lg border-l-8"
+                className="h-[240px] w-[400px] rounded-lg border-l-8 border-base"
                 src="/image/minecraft_dot.png"
               ></img>
 
@@ -34,7 +34,7 @@ const Works = () => {
           >
             <div className="flex flex-col items-center">
               <img
-                className="border-base h-[240px] w-[400px] rounded-lg border-l-8"
+                className="h-[240px] w-[400px] rounded-lg border-l-8 border-base"
                 src="/image/kurisakien.png"
               ></img>
               <div className="text-xl text-base">栗崎園 ECサイト</div>
