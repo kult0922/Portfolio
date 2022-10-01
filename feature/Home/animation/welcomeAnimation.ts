@@ -1,7 +1,8 @@
 // @ts-nocheck
 import mojs from '@mojs/core'
+import colors from '../../../constant/colors'
 
-const sample2 = (parent) => {
+const welcomeAnimation = (parent) => {
   const Shapes = mojs.stagger(mojs.Shape)
   const Bursts = mojs.stagger(mojs.Burst)
   const xs = [
@@ -15,11 +16,21 @@ const sample2 = (parent) => {
     '140px',
     '180px',
   ]
+  const colorArray = [
+    'white',
+    colors.base,
+    'white',
+    colors.base,
+    colors.base,
+    'white',
+    colors.base,
+    'white',
+  ]
 
   const shapes = new Shapes({
     quantifier: 8,
     parent: parent,
-    fill: 'white',
+    fill: colorArray,
     shape: [
       'polygon',
       'circle',
@@ -47,7 +58,7 @@ const sample2 = (parent) => {
     quantifier: 8,
     parent: parent,
     children: {
-      fill: ['white'],
+      fill: colorArray,
     },
     x: xs,
     radius: { 0: 50 },
@@ -72,11 +83,10 @@ const sample2 = (parent) => {
 
   const text = 'Welcome!'
   for (let i = 0; i < text.length; i++) {
-    console.log(i)
     const character = document.createElement('div')
     character.classList.add('character')
     character.innerHTML = text[i]
-    character.style.cssText = `color: rgba(255, 255, 255, 1.0); font-weight: bold;font-size: 28px; position: absolute; top: 50%; left: 50%; margin-right: -50%; margin-bottom: -50%; transform: translate(-50%, -50%)`
+    character.style.cssText = `color: white; font-weight: bold;font-size: 28px; position: absolute; top: 50%; left: 50%; margin-right: -50%; margin-bottom: -50%; transform: translate(-50%, -50%)`
     chars._modules[i].el.appendChild(character)
   }
 
@@ -88,4 +98,4 @@ const sample2 = (parent) => {
   return timeline
 }
 
-export default sample2
+export default welcomeAnimation

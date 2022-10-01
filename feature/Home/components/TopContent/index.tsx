@@ -1,8 +1,7 @@
 // @ts-nocheck
 import mojs from '@mojs/core'
 import React, { useRef, useEffect } from 'react'
-import sample1 from '../../animation/sample1'
-import sample2 from '../../animation/sample2'
+import welcomeAnimation from '../../animation/welcomeAnimation'
 
 const TopContent = () => {
   const animDom = useRef()
@@ -14,7 +13,7 @@ const TopContent = () => {
         this.replay()
       },
     })
-    timeline.append(sample2(animDom.current))
+    timeline.append(welcomeAnimation(animDom.current))
     timeline.play()
   }, [])
 
