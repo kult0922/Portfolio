@@ -15,12 +15,12 @@ const Work = ({ webUrl, codeUrl, imagePath, title, description }: Props) => {
         <a href={webUrl} target="_blank" rel="noopener noreferrer">
           <div className="flex flex-col items-center">
             <img
-              className="h-[240px] w-[400px] rounded-lg border-l-8 border-base"
+              className="h-[180px] w-[300px] rounded-lg border-l-8 border-base"
               src={imagePath}
             ></img>
 
             <div className="mt-2 text-xl text-base">{title}</div>
-            <div className="">{description}</div>
+            <div className="text-sm">{description}</div>
           </div>
         </a>
         <div className="mt-1">
