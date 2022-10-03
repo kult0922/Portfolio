@@ -1,4 +1,4 @@
-import Experience from '../Experience'
+import Experience from './Experience'
 import Section from '../Section'
 
 const Bio = () => {
