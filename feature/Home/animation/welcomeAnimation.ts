@@ -86,7 +86,7 @@ const welcomeAnimation = (parent) => {
     const character = document.createElement('div')
     character.classList.add('character')
     character.innerHTML = text[i]
-    character.style.cssText = `color: white; font-weight: bold;font-size: 28px; position: absolute; top: 50%; left: 50%; margin-right: -50%; margin-bottom: -50%; transform: translate(-50%, -50%)`
+    character.style.cssText = `color: white; font-weight: bold;font-size: 28px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)`
     chars._modules[i].el.appendChild(character)
   }
 
