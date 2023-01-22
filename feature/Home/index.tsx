@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Abstract from './components/Abstract'
 import Bio from './components/Bio'
 import Name from './components/Name'
 import OnTheWeb from './components/OnTheWeb'
-// import TopContent from './components/TopContent'
 import Works from './components/Works'
 import dynamic from 'next/dynamic'
 
