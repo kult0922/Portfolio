@@ -14,7 +14,11 @@ const Bio = () => {
           year="2021.3"
           title="千葉大学融合理工学府 数学情報科学専攻 修士課程 卒業"
         ></Experience>
-        <Experience year="2021.4" title="楽天株式会社 入社"></Experience>
+        <Experience
+          year="2021.4"
+          title="楽天グループ株式会社 入社"
+        ></Experience>
+        <Experience year="2023.5" title="株式会社 AI Shift 入社"></Experience>
       </div>
     </div>
   )
