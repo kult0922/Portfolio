@@ -22,6 +22,10 @@ const Bio = () => {
           year="2023.5 - 2025.2"
           title="株式会社 CyberAgent"
         ></Experience>
+        <Experience
+          year="2025.3 - now"
+          title="都内の企業でエンジニア"
+        ></Experience>
       </div>
     </div>
   )
